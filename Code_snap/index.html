@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Snap HTML | CSS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      :root {
+        --background: rgb(8, 3, 33);
+        --red: rgba(255, 0, 0, 0.524);
+        --yellow: rgba(255, 255, 0, 0.527);
+        --green: rgba(0, 128, 0, 0.521);
+        --tabColor : rgb(226, 82, 140);
+        --blue-code-color : rgb(18, 155, 253);
+        --blue-code-color-hightliter : rgba(67, 120, 212, 0.236);
+      }
+
+      ::selection{
+        background-color: var(--blue-code-color-hightliter);
+        color: var(--tabColor);
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(94, 65, 151);
+      }
+      .container {
+        background-color: var(--background);
+        width: 500px;
+        height: 340px;
+        border-radius: 20px;
+        color: white;
+        overflow: hidden;
+        box-shadow: rgba(148, 148, 148, 0.12) 0px 10px 36px 0px, rgba(97, 97, 97, 0.14) 0px 0px 0px 1px;
+        border: 1px solid rgba(255, 255, 255, 0.394);
+        
+      }
+      .navigation {
+        padding: 12px;
+        position: relative;
+      }
+      .CodeSnap_tabname {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(181, 180, 180, 0.798);
+      }
+      .navigation_icons {
+        position: absolute;
+        z-index: 44;
+        width: 22%;
+        height: 100%;
+        top: 5px;
+        left: 20px;
+      }
+      .icons {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 5px;
+      }
+      .icon {
+        background-color: var(--red);
+        width: 14px;
+        height: 14px;
+        border-radius: 50px;
+        transition: 0.2s ease-out;
+        &:hover{
+            background-color: red;
+        }
+      }
+      .icon:nth-child(2) {
+        background-color: var(--yellow);
+        &:hover{
+            background-color: yellow;
+        }
+      }
+      .icon:nth-child(3) {
+        background-color: var(--green);
+        &:hover{
+            background-color: green;
+        }
+      }
+
+      /* code snap style */
+      .Code_snapContainer {
+        margin-top: 10px;
+      }
+      .codeTag{
+        padding: 10px;
+        color: var(--tabColor);
+        font-weight:400;
+        letter-spacing: 0.3px;
+        line-height: 21px;
+      }
+      .code_line{
+        color: var(--blue-code-color);
+        letter-spacing: 1px;
+        font-weight: normal;
+      }
+      .hightliter{
+        background-color: var(--blue-code-color-hightliter);
+        padding: 2px 8px;
+        border: 10px;
+      }
+      .brckets{
+        color: rgba(118, 118, 118, 0.784);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <div class="CodeSnap_tabname">
+          <p>Codesnap.html</p>
+        </div>
+        <div class="navigation_icons">
+          <div class="icons">
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+          </div>
+        </div>
+      </div>
+      <div class="Code_snapContainer">
+        <pre class="codeTag">
+       <span class="brckets" >&lt;</span>Code<span class="brckets" >&gt;</span>
+            <span class="brckets" >&lt;</span>Text<span class="brckets" >&gt;</span><span class="hightliter code_line" >Ticket Sales</span><span class="brckets">&lt;</span>Text<span class="brckets" >&gt;</span>
+             <span class="brckets">&lt;</span>Wetric<span class="brckets">&gt;</span><span class="hightliter code_line" >$ 71.457</span>&lt;/Wetric&gt;
+             <span class="brckets" >&lt;</span>Flex className="mt-2"  <span class="brckets" >&gt;</span>
+             <span class="brckets" >&lt;</span>Text<span class="brckets" >&gt;</span><span class="brckets" >&lt;</span>bold<span class="brckets" >&gt;</span><span class="hightliter code_line" >45%</span><span class="brckets" >&gt;</span>/bold<span class="brckets" >&gt;</span><span class="brckets" >&lt;</span>/Text<span class="brckets" >&gt;</span>
+             <span class="brckets" >&lt;</span>Text<span class="brckets" >&gt;</span><span class="hightliter code_line" >$ 456.345</span><span class="brckets" >&lt;</span>/Text<span class="brckets" >&gt;</span>
+             <span class="brckets" >&lt;</span>/Flex<span class="brckets" >&gt;</span>
+
+             <span class="brckets" >&lt;</span>ProgrssBar value={ 32 }
+             className="mt-4" /<span class="brckets" >&gt;</span>
+        <span class="brckets" >&lt;</span>/Code <span class="brckets" >&gt;</span>
+        </pe>
+      </div>
+    </div>
+  </body>
+</html>
