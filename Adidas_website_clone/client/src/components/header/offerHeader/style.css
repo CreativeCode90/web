@@ -1,0 +1,152 @@
+.offerHeaderBarContainer{
+    background-color: var(--common-background);
+    color: var(--common-color);
+    padding: 6px;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    
+}
+
+.offerWraper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   
+}
+
+.offer_list{
+    font-size: 6px;
+    font-family: "Lato", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.offer_list::before{
+    content: "EXTRA 5% OFF ON PREPAID ORDERS";
+    animation: ChangeOffers 10s linear infinite;
+}
+
+@keyframes ChangeOffers {
+    25%{
+        content: "FREE DELIVERY, RETURN & EXCHANGE";
+    }
+    50%{
+        content: "SIGN UP & GET 15% OFF help";
+    }
+    100%{
+        content: "EXTRA 5% OFF ON PREPAID ORDERS";
+    }
+}
+
+.toggleOfferBar{
+    background-color: var(--common-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    padding-bottom: 80px;
+    color: var(--load-black-color);
+    transform: translateY(-100%);
+    transition: 0.3s linear;
+    z-index: 999;
+   
+}
+
+.topRow_to{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.closeBar{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: 1px solid rgba(0, 0, 0, 0.682);
+    
+}
+
+.offer_list_to{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+.offerContainer{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#OfferHeading{
+    font-size: 10px;
+    font-family: "Lato", serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    word-spacing: 1px;
+}
+
+
+#offerPera{
+    font-size: 9px;
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+    word-spacing: 1px;
+    line-height: 12px;
+    width: 200px;
+}
+#offerPera::first-letter{
+    text-transform: uppercase;
+}
+
+#Offerlink{
+    font-size: 9px;
+    font-family: "Lato", serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    word-spacing: 1px;
+    text-decoration: underline;
+}
+
+.offerLink{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width:800px) {
+
+ 
+    #OfferHeading{
+        font-size: 8px;
+    }
+    #offerPera{
+        font-size: 7px;
+        width: auto;
+    }
+    #Offerlink{
+        font-size: 7px;
+    }
+   
+}
+
+@media screen and (max-width:600px) {
+    .offer_list_to{
+        flex-direction: column;
+        gap: 10px;
+    }
+}

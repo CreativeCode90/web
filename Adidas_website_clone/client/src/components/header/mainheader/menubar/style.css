@@ -1,0 +1,45 @@
+.menuLink {
+    color: #000000;
+    line-height: 16px;
+    vertical-align: baseline;
+    letter-spacing: 1.87px;
+    word-spacing: 0px;
+    text-transform: uppercase;
+    text-indent: 0px;
+    font-size: 8px;
+    font-family: "Lato", serif;
+    font-weight: 800;
+    font-style: normal;
+    cursor: pointer;
+    &:hover{
+        border-bottom: 2px solid black;
+    }
+  }
+  
+
+  .bold_link{
+    font-weight: bolder;
+  }
+
+  .light_link{
+    font-weight: 500;
+    color: rgb(4, 4, 4);
+ 
+  }
+  .normal_link{
+    font-weight: 600;
+  }
+
+  .red_link{
+    color: var(--load-red-color);
+    &:hover{
+       border-bottom: 2px solid var(--load-red-color);
+
+   }
+  }
+
+  @media screen and (max-width:700px) {
+    .red_link{
+       display: none;
+    }
+  }

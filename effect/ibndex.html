@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: hotpink;
+            position: relative;
+        }
+        .toogleBar{
+            /* display: none; */
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+            color: white;
+            position: absolute;
+            top: 0%;
+            left: 0;
+            transform: translateY(-100%);
+            transition: 0.4s linear;
+        
+        }
+        .activeBar{
+            transform: translateY(0%);
+            transition: 0.4s linear;
+            height: 200px;
+        }
+        .showBar{
+            padding: 10px;
+            display: flex;
+            align-self: center;
+            justify-content: space-around;
+        }
+        button{
+            background-color: white;
+            color: black;
+            border: 1px solid red;
+            padding: 2px 7px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="toogleBar">
+            <button>hide me</button>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque iusto doloribus quaerat quas quasi, modi iure beatae impedit similique harum explicabo, veritatis quod deserunt non, maiores sint aspernatur. Perferendis, vel?
+            </p>
+        </div>
+        <div class="showBar">
+            <h1>hello everyOne </h1>
+            <button class="show" >show me </button>
+        </div>
+    </div>
+</body>
+<script>
+let show  = document.querySelector(".show");
+let toggleView = document.querySelector(".toogleBar");
+
+show.addEventListener("click",()=>{
+    console.log(toggleView)
+    toggleView.classList.toggle("activeBar")
+})
+</script>
+</html>

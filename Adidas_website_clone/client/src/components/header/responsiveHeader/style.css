@@ -1,0 +1,37 @@
+.responsiveHeader{
+    background-color: var(--header-background);
+    display: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.resNavbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--nav-padding);
+}
+
+.reslogoContainer svg{
+    width: 25px;
+}
+
+
+.leftbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.rightbarr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .responsiveHeader{
+        display: block;
+    }
+}

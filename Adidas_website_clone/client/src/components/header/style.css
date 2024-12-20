@@ -1,0 +1,13 @@
+:root {
+  --header-background: white;
+  --nav-padding: 6px 10px;
+}
+
+.LogoSvg {
+  width: 35px;
+  cursor: pointer;
+}
+
+.HeaderLayout {
+  width: 100%;
+}

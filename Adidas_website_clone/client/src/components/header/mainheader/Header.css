@@ -1,0 +1,75 @@
+/* logo */
+.logoContainer {
+    flex: 1;
+}
+
+
+.MainHeader {
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.navbar {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 20px;
+}
+
+.menuLinkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex: 5;
+}
+
+
+
+
+.navActionContainer{
+    /* background-color: red; */
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+
+.actionIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+#nav_icons{
+    font-size: 13px;
+}
+
+
+
+
+
+
+.top_helpbar{
+    /* background-color: yellowgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding:2px 20px;
+    gap: 10px;
+    font-size: 8px;
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+   
+}
+
+
+@media screen and (max-width:600px) {
+  .MainHeader{
+    display: none;
+  }
+}
