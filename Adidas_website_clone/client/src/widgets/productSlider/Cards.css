@@ -1,0 +1,44 @@
+/* Container styles */
+.card-container {
+    width: 500px;
+    overflow-x: auto;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #888 #f9f9f9;
+  }
+  
+  /* Scrollbar for WebKit browsers */
+  .card-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .card-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+  
+  .card-container::-webkit-scrollbar-track {
+    background: #f9f9f9;
+  }
+  
+  /* Card styles */
+  .card {
+    flex: 0 0 auto; /* Prevent shrinking or growing */
+    width: 307px;
+    height: 400px;
+    background-color: #4caf50;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    text-align: center;
+  }
+  
