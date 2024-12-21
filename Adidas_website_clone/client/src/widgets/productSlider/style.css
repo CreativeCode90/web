@@ -1,72 +1,106 @@
-.Product_slider{
-    /* background-color: red; */
+.Product_slider {
     padding-top: 20px;
     max-width: 1500px;
     margin: auto;
-    padding-bottom: 200px;
-
-}
-
-.wrapper_Slider{
-    /* background-color: rgb(175, 106, 255); */
+    padding-bottom: 50px;
+  }
+  
+  .wrapper_Slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slider_headingbox{
     display: flex;
     align-items: center;
-    justify-content: end;
-    padding: 3px;
-    
-  
-}
-.slider_content_flex{
-    /* background-color: forestgreen; */
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    width: 95%;
-}
-.slider_heading{
-    
-   font-size: 30px;
-   font-family: "Lato", serif;
-   font-weight: 600;
-   font-style: normal;
-   text-transform: uppercase;
-
-
-}
-
-.slider_box_list{
-    /* background-color: plum; */
+    justify-content: start;
     width: 100%;
-    overflow-x: auto;
+  }
+  .slider_heading {
+    font-size: 25px;
+    font-family: "Lato", serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .slider_box_list {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider_list {
     display: flex;
     gap: 10px;
-    overflow: hidden;
-    /* overflow-x: auto; */
-    padding-bottom: 10px;
-}
-
-.slider_card{
-    background-color: rgb(255, 255, 255);
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  .slider_list::-webkit-scrollbar{
+    width: 1px;
+  }
+  .slider_card {
+    background-color: #fff;
     display: flex;
     flex-direction: column;
-    flex: 0 0 auto; /* Prevent shrinking or growing */
-    width: 307px;
-    height: auto;
-   
-}
-.slider_img{
-    flex: 2;
-}
-.slider_img img{
+    flex: 0 0 auto;
+    width: 310px;
+    gap: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slider_img img {
     width: 100%;
-    height: 100%;
-}
-.slider_title{
-    flex: 1;
-    padding-top: 20px;
+    height: auto;
+  }
+  
+  .slider_title {
     font-size: 14px;
     font-family: "Lato", serif;
     font-weight: 600;
-    font-style: normal;
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
     text-transform: uppercase;
-}
+  }
+  
+  .nav_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+   background-color: white;
+   color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+    border: 1px solid black;
+    font-size: 24px;
+    visibility: hidden;
+    transition: 0.6s linear;
+ 
+  }
+  
+  .nav_button.prev {
+    left: 150px;
+   
+  }
+  
+  .nav_button.next {
+    right: 150px;
+
+
+  }
+  
+
+  .nav_button:hover {
+   cursor: grab;
+   
+  }
+
+  .slider_box_list:hover .nav_button{
+    visibility: visible;
+  }
+  
