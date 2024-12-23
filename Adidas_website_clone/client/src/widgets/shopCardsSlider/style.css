@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  position: relative;
 }
 .shop_slider_heading {
   font-size: 22px;
@@ -67,6 +68,7 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   padding-bottom: 30px;
+  position: relative;
 }
 
 .shop_slider_wrapper_slider_list::-webkit-scrollbar {
@@ -178,4 +180,26 @@ padding-bottom: 20px;
   background-color: rgb(155, 155, 155);
   width: 100%;
   height: 2px;
+}
+
+.navi_slider{
+  position: absolute;
+  z-index: 55;
+  top: 40%;
+  background-color: white;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  /* display: none; */
+  cursor: pointer;
+}
+
+.shop_slider_wrapper_slider_list:hover .navi_slider{
+  display: block;
+}
+.left_prev{
+  left: 50px;
+}
+.right_prev{
+  right: 50px;
 }

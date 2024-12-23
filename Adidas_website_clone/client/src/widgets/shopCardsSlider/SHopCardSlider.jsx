@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import "./style.css";
 import Api from "./api/Api";
 import { FaRegHeart } from "react-icons/fa";
 import { MdCurrencyRupee } from "react-icons/md";
+import { GoArrowLeft } from "react-icons/go";
+import { FaArrowRightLong } from "react-icons/fa6";
 export const SHopCardSlider = () => {
   const [ApiData, setApiData] = useState(Api);
   const [category, setCategory] = useState("running");
@@ -12,7 +14,18 @@ export const SHopCardSlider = () => {
     if (category == "sportware") return ApiData.SportswareApi;
     return [];
   };
+  const sliderRef = useRef(null);
   const CurrentApiData = getProduct();
+
+  const scrollLeft = () => {
+    sliderRef.current.scrollBy({ left: -300, behavior: "smooth" });
+    setLeftPrev(true);
+  };
+
+  const scrollRight = () => {
+    sliderRef.current.scrollBy({ left: 300, behavior: "smooth" });
+  };
+
   return (
     <>
       <div className="shopCardCategoryContainerSlider">
@@ -36,7 +49,10 @@ export const SHopCardSlider = () => {
             <button className="cote_btn">lifestyles</button>
           </div>
         </div>
-        <div className="shop_slider_wrapper_slider_list">
+        <button className="navi_slider left_prev" onClick={scrollLeft}>
+          <GoArrowLeft />
+        </button>
+        <div className="shop_slider_wrapper_slider_list" ref={sliderRef}>
           {CurrentApiData.map((e) => {
             return (
               <div className="shop_card" key={e.id}>
@@ -78,6 +94,9 @@ export const SHopCardSlider = () => {
             );
           })}
         </div>
+        <button className="navi_slider right_prev" onClick={scrollRight}>
+          <FaArrowRightLong />
+        </button>
       </div>
       <div className="empty"></div>
     </>
