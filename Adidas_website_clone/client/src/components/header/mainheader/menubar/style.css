@@ -6,9 +6,9 @@
     word-spacing: 0px;
     text-transform: uppercase;
     text-indent: 0px;
-    font-size: 8px;
+    font-size: 11px;
     font-family: "Lato", serif;
-    font-weight: 800;
+    font-weight: bolder;
     font-style: normal;
     cursor: pointer;
     &:hover{
@@ -32,6 +32,7 @@
 
   .red_link{
     color: var(--load-red-color);
+    font-weight: 800;
     &:hover{
        border-bottom: 2px solid var(--load-red-color);
 

@@ -1,0 +1,62 @@
+.shopCardCategoryContainerSlider {
+  background-color: pink;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.shop_slider_heading {
+  font-size: 22px;
+  font-family: "Lato", serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: capitalize;
+  word-spacing: 2px;
+  text-align: left;
+}
+
+.empty {
+  height: 400px;
+}
+.shop_slider_category_container {
+  background-color: red;
+}
+.wrapper_c_btns {
+  background-color: pink;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cote_btn {
+  background-color: transparent;
+  color: black;
+  text-transform: uppercase;
+  font-family: bold;
+  padding: 8px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 1.4px solid black;
+  font-size: 14px;
+  font-family: "Lato", serif;
+  font-weight: 600;
+  font-style: normal;
+  &:hover{
+    background-color: black;
+    color: white;
+  }
+}
+
+.active{
+    background-color: black;
+    color: white;
+}

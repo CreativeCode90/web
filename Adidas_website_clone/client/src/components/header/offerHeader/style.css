@@ -1,7 +1,7 @@
 .offerHeaderBarContainer{
     background-color: var(--common-background);
     color: var(--common-color);
-    padding: 6px;
+    padding: 10px;
     cursor: pointer;
     position: relative;
     width: 100%;
@@ -17,7 +17,7 @@
 }
 
 .offer_list{
-    font-size: 6px;
+    font-size: 9px;
     font-family: "Lato", serif;
     font-weight: 600;
     font-style: normal;

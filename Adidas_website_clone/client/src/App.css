@@ -1,37 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-:root{
-    --common-background : black;
-    --common-color : white;
-    --load-red-color : #e44c5b;
-    --load-yellow-color : #fed61c;
-    --load-black-color : black;
-    
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+:root {
+  --common-background: black;
+  --common-color: white;
+  --load-red-color: #e44c5b;
+  --load-yellow-color: #fed61c;
+  --load-black-color: black;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
+body {
+  width: 100%;
+  height: 100vh;
 }
 
-#white_Icon{
-    color: var(--common-color);
-    font-size: 10px;
-    
-
+#white_Icon {
+  color: var(--common-color);
+  font-size: 15px;
 }
 
-#black_icons{
-    color: var(--load-black-color);
-    font-size: 15px;
+#black_icons {
+  color: var(--load-black-color);
+  font-size: 16px;
 }
-
-
 
 /* 
 
@@ -83,10 +78,10 @@ text-indent:
 
 
 
-   font-size: 6px;
-    font-family: "Lato", serif;
-    font-weight: 600;
-    font-style: normal;
+font-size: 6px;
+font-family: "Lato", serif;
+font-weight: 600;
+font-style: normal;
 
 
 
