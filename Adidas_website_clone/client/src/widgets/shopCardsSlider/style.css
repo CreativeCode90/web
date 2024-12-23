@@ -72,16 +72,20 @@
 .shop_slider_wrapper_slider_list::-webkit-scrollbar {
   height: 5px;
   width: 5px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.568);
 }
 
 
 .shop_card{
-  /* background-color: red; */
+
   padding: 4px;
 font-family: "Lato", serif;
 font-weight: 600;
 font-style: normal;
+padding-bottom: 20px;
+&:hover{
+  border: 1px solid black;
+}
 }
 .shop_product_card_title_{
  padding-top: 13px;
