@@ -1,5 +1,5 @@
 .shopCardCategoryContainerSlider {
-  background-color: pink;
+  /* background-color: pink; */
   padding-top: 10px;
   padding-bottom: 10px;
   max-width: 1500px;
@@ -21,11 +21,9 @@
 .empty {
   height: 400px;
 }
-.shop_slider_category_container {
-  background-color: red;
-}
+
 .wrapper_c_btns {
-  background-color: pink;
+  /* background-color: pink; */
   padding-top: 3px;
   padding-bottom: 3px;
   display: flex;
@@ -59,4 +57,121 @@
 .active{
     background-color: black;
     color: white;
+}
+
+.shop_slider_wrapper_slider_list{
+  /* background-color: red; */
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 30px;
+}
+
+.shop_slider_wrapper_slider_list::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background-color: black;
+}
+
+
+.shop_card{
+  /* background-color: red; */
+  padding: 4px;
+font-family: "Lato", serif;
+font-weight: 600;
+font-style: normal;
+}
+.shop_product_card_title_{
+ padding-top: 13px;
+ padding-bottom: 10px;
+ padding-left: 10px;
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+
+#shop_product_card_img_id{
+  width: 316px;
+  height: 316px;
+}
+
+.shop_product_card_img_{
+  position: relative;
+}
+.like_wrappe{
+  position: absolute;
+
+  top: 0;
+  right: 0%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 20px;
+  font-size: 18px;
+}
+
+#Like{
+  cursor: grab;
+}
+
+.price_wrapper{
+  position: absolute;
+  bottom: 0%;
+ left: 0%;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.discount{
+  background-color: var(--common-color);
+  padding: 4px;
+  width: 60px;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--common-color);
+  width: 150px;
+  padding: 4px;
+}
+
+.price_co{
+  display: flex;
+  align-items: center;
+ letter-spacing: 2px;
+}
+.sals_price{
+  color: var(--load-red-color);
+}
+.price_cut{
+  position: relative;
+  color: rgb(155, 155, 155);
+}
+
+.cutline{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+._line_cut{
+  background-color: rgb(155, 155, 155);
+  width: 100%;
+  height: 2px;
 }
