@@ -1,0 +1,30 @@
+.joinContainer {
+  background-color: var(--load-yellow-color);
+  padding: 30px 20px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 25px;
+  font-family: "Lato", serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  button{
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    &:hover{
+        background-color: grey;
+    }
+  }
+}

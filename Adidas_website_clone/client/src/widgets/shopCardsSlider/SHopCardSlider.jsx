@@ -98,7 +98,7 @@ export const SHopCardSlider = () => {
           <FaArrowRightLong />
         </button>
       </div>
-      <div className="empty"></div>
+     
     </>
   );
 };

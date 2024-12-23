@@ -1,13 +1,22 @@
 import React from "react";
 import HeroSection from "./HeroSection";
-import ProductSlider from "../../widgets/productSlider/ProductSlider";
 import { SHopCardSlider } from "../../widgets/shopCardsSlider/SHopCardSlider";
+import HeroBanner from "./HeroBanner";
+import Productsliderwrapper from "../ProductSlider/Productsliderwrapper";
+import PromotionsSlider from "../promotionSlider/PromotionsSlider";
+import About from "../about/About";
+import Join from "../join/Join";
 const HeroLayout = () => {
   return (
     <>
       <HeroSection />
-      <ProductSlider/>
-     <SHopCardSlider/>
+      <Productsliderwrapper />
+
+      <SHopCardSlider />
+      <HeroBanner />
+      <PromotionsSlider />
+      <About/>
+      <Join/>
     </>
   );
 };

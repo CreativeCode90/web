@@ -1,0 +1,45 @@
+.ABoutContainer {
+  background-color: black;
+  color: white;
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom:50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.wrapper_about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  font-family: "Lato", serif;
+  font-weight: 600;
+  font-style: normal;
+
+  gap: 15px;
+  text-align: center;
+  width: 600px;
+  p {
+    text-align: justify;
+    width: 600px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.938);
+  }
+  h3{
+    font-size: 24px;
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .aboutLogo{
+    margin-top: 2rem;
+   
+  }
+}
