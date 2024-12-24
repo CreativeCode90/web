@@ -11,7 +11,6 @@ const HeroLayout = () => {
     <>
       <HeroSection />
       <Productsliderwrapper />
-
       <SHopCardSlider />
       <HeroBanner />
       <PromotionsSlider />

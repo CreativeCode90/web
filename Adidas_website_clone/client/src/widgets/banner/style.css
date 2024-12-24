@@ -99,3 +99,14 @@
     font-size: 20px;
   }
   
+
+  @media screen and (max-width:800px) {
+    .HeroSection_container {
+      padding: 4px;
+      height: 400px;
+      position: relative;
+      max-width: 1500px;
+      margin:  auto;
+  
+    }
+  }

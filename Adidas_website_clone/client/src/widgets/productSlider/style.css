@@ -4,6 +4,7 @@
   padding-top: 30px;
   padding-left: 50px;
   padding-bottom: 50px;
+  
 }
 
 .wrapper_Slider {
@@ -96,4 +97,40 @@
 
 .slider_box_list:hover .nav_button {
   visibility: visible;
+}
+
+
+@media screen and (max-width:800px) {
+  .nav_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 8px 10px;
+    cursor: pointer;
+    z-index: 10;
+    border: 1px solid black;
+    font-size: 20px;
+    visibility: hidden;
+    transition: 0.6s linear;
+  }
+  
+  .nav_button.prev {
+    left: 10px;
+  }
+  
+  .nav_button.next {
+    right: 10px;
+  }
+  .Product_slider {
+    max-width: 1500px;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    
+  }
+  
 }

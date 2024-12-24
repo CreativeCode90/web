@@ -43,3 +43,50 @@
    
   }
 }
+
+@media screen and (max-width:800px) {
+  .ABoutContainer {
+    background-color: black;
+    color: white;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom:25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .wrapper_about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    font-family: "Lato", serif;
+    font-weight: 600;
+    font-style: normal;
+  
+    gap: 15px;
+    text-align: center;
+    width:100%;
+    p {
+      text-align: justify;
+      width: auto;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.938);
+    }
+    h3{
+      font-size: 20px;
+      text-align: center;
+      word-spacing: 2px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .aboutLogo{
+      margin-top: 2rem;
+     
+    }
+  }
+}

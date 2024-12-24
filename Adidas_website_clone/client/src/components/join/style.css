@@ -28,3 +28,39 @@
     }
   }
 }
+
+
+@media screen and (max-width:800px) {
+  .joinContainer {
+    background-color: var(--load-yellow-color);
+    padding: 30px 7px 30px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 20px;
+    font-family: "Lato", serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    flex-direction: column;
+    button{
+      background-color: black;
+      color: white;
+      border: none;
+      outline: none;
+      padding: 10px 12px;
+      font-size: 10px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      &:hover{
+          background-color: grey;
+      }
+    }
+  }
+  
+}
